@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day4</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Notes of CSS Day-1</h1>
+                <p>This Notes will help you to understand a few basic concepts of CSS.</p>
+                <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+                <div>
+                    <ul>
+                        <li><a href = "Basic_Portfolio.html">About Me</a><br></li>
+                        <li><a href = "Day1.html">Day 1 HTML Notes</a><br></li>
+                        <li><a href = "Day2.html">Day 2 HTML Notes</a><br></li>
+                        <li><a href = "Day3.html">Day 3 HTML Notes</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </header>
+        <main>
+            <div>
+                <ul>
+                    <div>
+                        <li><h2>Introduction to CSS</h2>
+                            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of<br>
+                            a document written in HTML or XML (including XML dialects such as SVG, MathML or<br> 
+                            XHTML). CSS describes how elements should be rendered on screen, on paper, in speech,<br>
+                            or on other media.</p>
+                        
+                            <h3>Basic Structure of CSS</h3>
+                            <p>
+                                h1 {<br>
+                                    color: red;<br>
+                                   }<br> 
+                                where <b>h1</b> is the selector, <b>color</b> is the property, and <b>red</b> is the value.<br>
+                            </p>
+                            <h3>Simple Examples of CSS Properties:</h3>
+                            <p>
+                                <ul>
+                                    <li>color</li>
+                                    <li>background-color</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li><h2>How to include CSS?</h2>
+                            <ol>
+                                <li><h3>Incline Styles:</h3>
+                                    <p>Writting styles directly inline on each element.</p>
+                                    <p>&lt;h1 style="color:red;"&gt;Apna College&lt;/h1&gt;</p>
+                                </li>
+                                <li><h3>Using &lt;style&gt; tag</h3>
+                                    <p>Styles is added using &lt;style&gt; element in the same document in &lt;head&gt;.</p>
+                                    <p>&lt;style&gt;<br>
+                                        h1 {<br>
+                                            color:red;<br>
+                                        }<br>
+                                        &lt;/style&gt;<br>
+                                    </p>
+                                </li>
+                                <li><h3>External Stylesheet <b>(Most Popular)</b></h3>
+                                    <p>Writting CSS in a seperate document and linking it with HTML file.</p>
+                                    <p>So, linking HTML with CSS file:
+                                        &lt;head&gt;<br>
+                                        &lt;link rel="Stylesheet" href= "Style.css"&gt;<br>
+                                        &lt;/head&gt;<br>
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><h2>Commonly Used Properties in CSS:</h2>
+                            <ul>
+                                <li><h3>Color Property:</h3>
+                                    <p>Used to set the color of the foreground.</p>
+                                    <p> color: blue;<br>
+                                        color: #ff0000;<br>
+                                        color: rgb(214, 122, 127);
+                                    </p>
+                                </li>
+                                <li><h3>Background Color Property:</h3>
+                                    <p>Used to set the color of the background.</p>
+                                    <p> background-color: purple;<br>
+                                        background-color: #00f0ff;<br>
+                                        background-color: rgb(123, 155, 234);<br>
+                                    </p>
+                                </li>
+                                <b>Color Systems:</b>
+                                <ul>
+                                    <li><h4>Naming color:</h4>
+                                        <p>color: blue;</p>
+                                        <p>Each browser recognizes around 140 colors named.</p>
+                                        <p><b>Examples:</b> red, blue, green, aqua, pink, yellow, purple e.t.c.</p>
+                                    </li>
+                                    <li><h4>RGB (Red Green Blue):</h4>
+                                        <p> color: rgb(255, 0, 0); </p>
+                                        <p><b>Examples:</b></p>
+                                        <p>
+                                            <ul>
+                                                <li>red: rgb(255, 0, 0); </li>
+                                                <li>green: rgb(0, 255, 0); </li>
+                                                <li>black: rgb(0, 0, 0); </li>
+                                                <li>white: rgb(255, 255, 255); </li>
+                                                <li>yellow: rgb(255, 255, 0); </li>
+                                            </ul>
+                                        </p>
+                                    </li>
+                                    <li><h4>Hexadecimal or Hex code:</h4>
+                                        <p> Hex code consists (0-9) and (a-f)</p>
+                                        <p>color: #ffffff; </p>
+                                        <p><b>Examples:</b></p>
+                                        <p>
+                                            <ul>
+                                                <li>black: #000000; </li>
+                                                <li>white: #ffffff; </li>
+                                                <li>blue:  #0000ff; </li>
+                                                <li>yellow:#ffff00; </li>
+                                            </ul>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <li><h3>Text Properties:</h3>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <h2> Contact Me </h2>
+            <ul>
+                <li><b>Email</b>: jhaaaisha78@gmail.com</li>
+                <li><b>Whatsapp</b>: 9819985307</li>
+                <li><a href="https://github.com/AaishaCodeWithAI/">Github</a></li>
+                <li><a href="https://www.facebook.com/aaisha.jha.612471">Facebook</a></li>
+                <li><a href="https://www.instagram.com/aaishajha17/">Instagram</a></li>
+            </ul>
+            <hr>
+            <h4> Made with &hearts; by Aaisha Jha</h4>
+        </footer>
+    </body>
+</html>
