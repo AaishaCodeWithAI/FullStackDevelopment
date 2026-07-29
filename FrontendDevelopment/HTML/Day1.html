@@ -3,6 +3,7 @@
     <head> <!-- contains metadata, extra information for our file-->
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "../Style.css">
         <title>Day 1</title> <!--Not shown in Web Page, but at the top of the web page beside icon-->
     </head>
     <body> <!--Contains main web page informations-->
@@ -10,29 +11,27 @@
             <h1> Notes on Day 1 </h1> <!--For heading-->
             <p>This Notes will help you to understand a few basic concepts of HTML.</p>
             <ul>
-                <li><a href = "Basic_Portfolio.html">About Me</a><br></li>
                 <li><a href = "Day1.html">Day 1 Notes</a><br></li>
                 <li><a href = "Day2.html">Day 2 Notes</a><br></li>
                 <li><a href = "Day3.html">Day 3 Notes</a></li>
-            </ul>   
-        <hr>
+            </ul>
         </header>
         <main>
             <ol type = "a"> <!--For Ordered List-->
-            <li><h2>Basic Info about Info about WebDevelopment</h2>
+            <li><h2>Basic Info about Web Development</h2>
                 <ul>
                     <li><h3>Internet</h3><!--It is List item tag used for listing in ol and ul tag-->
-                        <p>Internconnected network of computers around the world. It has main two types of computer in network.<br>
+                        <p>Interconnected network of computers around the world. It has main two types of computer in network.<br>
                         They are:
                             <ul>
                                 <li><h4>Server</h4>
-                                    <p>It is computer that responds to clients request. The effiecent servers work for 24/7.</p>
+                                    <p>It is computer that responds to clients request. The efficient servers work for 24/7.</p>
                                     <p><b>For Example:</b> Google</p>
                                 </li>
                                 <li><h4>Client</h4>
-                                    <p>It is computer that requests for the data and information from the Server. It can be<br>
+                                    <p>It is computer that requests for the data and information from the server. It can be<br>
                                     any computer with us as client.</p>
-                                    <p><b>For Example: Our mobile phone, Laptop</b></p>
+                                    <p><b>For Example:</b> Our mobile phone, Laptop</p>
                                 </li>
                             </ul>
                         </p>
@@ -40,11 +39,11 @@
                     <li><h3>Web Development</h3>
                         <p>It is a process of making, building websites for Internet. It is a very widely popular sector in IT.</p>
                         <p>The process of requesting and responding through webpages, it start when we as client requests for<br>
-                        by searching any sort of pages in Internet, like amazon.in, our request goes to amazon server and they<br>
-                        responding by sending us a bunddle of HTML, CSS, and JavaScript to our browser to open that webpage.<br>
+                        by searching any sort of pages in Internet, like amazon.in. Our request goes to amazon server and they<br>
+                        responds by sending us a bunddle of HTML, CSS, and JavaScript to our browser to open that webpage.<br>
                         This cycle is known as Response Request Cycle.</p>
                         <p>
-                            <ul><h5>Main Part of Web Development are:</h5>
+                            <ul><b>Main Part of Web Development are:</b>
                                 <li><b>HTML:</b> For Structure</li>
                                 <li><b>CSS:</b> For Style</li>
                                 <li><b>JavaScript:</b> For Functionality</li>
@@ -56,14 +55,14 @@
             <hr>
             <li><h2>HTML Elements created using Tag</h2>
                 <div>
-                    <p>Tags are the components used to design the structure of the webpages.They are special keywords enclosed in <br>
+                    <p>Tags are the components used to design the structure of the webpages. They are special keywords enclosed in <br>
                         angle brackets (< >) that define the structure and meaning of content on a web page.</p>
                     <p>
                         <b>Structure of an HTML Tag</b><br>
                         <ul>
-                            <li><b>Opening tag:</b> (<tagname>) — starts an element.</li>
-                            <li><b>Closing tag:</b> (</tagname>)— ends an element.</li>
-                            <li><b>Self-closing tag:</b> (<tagname />) — does not need a closing tag.</li>
+                            <li><b>Opening tag:</b> (&lt;tagname&gt;) — starts an element.</li>
+                            <li><b>Closing tag:</b> (&lt;/tagname&gt;)— ends an element.</li>
+                            <li><b>Self-closing tag:</b> (&lt;tagname/&gt;) — does not need a closing tag.</li>
                         </ul>
                     </p>
                 </div>
@@ -73,61 +72,87 @@
                             <p>It is the tag used to respresent paragraph. Using this tag, we can write pargaraph as this one that<br>
                             I wrote to showcase this line of text.</p>
                             <p>We use <b>("&lt;p&gt; &lt;/p&gt;")</b> to write any paragraph.</p>
+                            <p><b>Example:</b> &lt;p&gt;This is Aaisha Jha.&lt;/p&gt;</p>
                         </li>
                         <li><h4>Bold Tag</h4>
                             <p>It is the tag used to represent bolding. Using this tag, we can <b>Bold</b> any certain text for highlighting.</p>
                             <p>We use <b>("&lt;b&gt; &lt;/b&gt;")</b> to bold any text.</p>
+                            <p><b>Example:</b> &lt;b&gt;Bold&lt;/b&gt;</p>
                         </li>
                         <li><h4>Italic Tag</h4>
-                            <p>It is the tag used to reprsent italic. Using this tag, we can <i>slaht</i> the text little for hightlighting.</p>
+                            <p>It is the tag used to reprsent italic. Using this tag, we can <i>slant</i> the text little for hightlighting.</p>
                             <p>We use <b>("&lt;i&gt; &lt;/i&gt;")</b> to slaht any text.</p>
+                            <p><b>Example:</b> &lt;i&gt;Italic&lt;/i&gt;</p>
                         </li>
                         <li><h4>Underline Tag</h4>
                             <p>It is the tag used to represent underline. Using this tag, we can <u>underline</u> the text little for highlighting. </p>
                             <p>We use <b>("&lt;u&gt; &lt;/u&gt;")</b> to underline the text.</p>
+                            <p><b>Example:</b> &lt;u&gt;Underline&lt;/u&gt;</p>
                        </li>
                        <li><h4>Heading Tag</h4>
-                           <p>It is the tag used to represent Heading. Using this tag, we can write <h5>heading</h5> in diferent level for making our program<br>
+                           <p>It is the tag used to represent heading. Using this tag, we can write heading in diferent level for making our program<br>
                             more readble and visually pleasing.</p>
-                           <p>We use <b>("&lt;h1&gt; &lt;/h1&gt;")</b> to write heading. It is from h1 to h6 level. but only h1 to h4 and sometimes h5 is used.</p>
+                           <p>We use <b>("&lt;h1&gt; &lt;/h1&gt;")</b> to write heading. It is from h1 to h6 level, but only h1 to h4 and sometimes h5 is used.</p>
+                           <p><b>Example:</b> &lt;h1&gt;Introduction&lt;/h1&gt;</p>
                        </li>
                        <li><h4>Ordered List Tag</h4>
                            <p>It is the tag used to represent list which are ordered. Using this tag, we can order our list, in different type like number,<br>
-                            uppercase and lowercase alphabates, roman numbers.</p>
+                            uppercase and lowercase alphabets, roman numbers.</p>
                             <p>We use <b>("&lt;ol&gt; &lt;/ol&gt;")</b> to write ordered list. And we use a tag called listing tag inside the ol for writing the points.</p>
+                            <p><b>Example:</b> <br>
+                                &lt;ol&gt;<br>
+                                    &lt;li&gt;Books&lt;/li&gt;<br>
+                                    &lt;li&gt;Pen&lt;/li&gt;<br>
+                                &lt;/ol&gt;
+                            </p>
                        </li>
                        <li><h4>Unordered List Tag</h4>
                            <p>It is the tag used to represent list which are unordered. Using this tag, we can order our list in bullet points, to represent <br>
                             the points.</p>
                             <p>We use <b>("&lt;ul&gt; &lt;/ul&gt;")</b> to write unordered list. And we use a tag called listing tag inside the ul for writing the points.</p>
+                            <p><b>Example:</b> <br>
+                                &lt;ul&gt;<br>
+                                    &lt;li&gt;Rice&lt;/li&gt;<br>
+                                    &lt;li&gt;Flour&lt;/li&gt;<br>
+                                &lt;/ul&gt;
+                            </p>
                        </li>
                        <li><h4>Anchor Tag</h4>
-                           <p>It is the tag used to represent links in our pages. Using this tag, we can link any absoulte(Exact from Internet) or <br>
-                            relative(Our other file links).</p>
+                           <p>It is the tag used to represent links in our pages. Using this tag, we can link any absolute (Exact from Internet) or <br>
+                            relative (Our other file links).</p>
                             <p>We use <b>("&lt;a&gt; &lt;/a&gt;")</b> to link different pages to our pages.</p>
-                            <a href = "Day1_Assignments.html">Relative File</a><br>
-                            <a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a">Absoulte Files</a>
+                            <p><b>Example:</b><br>
+                                &lt;a href = "Day1_Assignments.html"&gt; Relative File&lt;/a&gt;<br>
+                                &lt;a href = "https://www.google.com"&gt;Absolute Files/a&gt;</p>
+                            <a href = "Day1_Assignments.html">Relative File</a>
+                            <a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a">Absolute Files</a>
+                            
                        </li>
                        <li><h4>Image Tag</h4>
-                           <p>It is the tag used to represent images in our pages. Using this tag, we can link images either absoulte or relative <br>
+                           <p>It is the tag used to represent images in our pages. Using this tag, we can link images either absolute or relative <br>
                             images.</p>
                             <p>We use <b>("&lt;img&gt;")</b> to link images to our pages. Image tag is a self closing tag. So, we don't need to close it.</p>
-                            <img src = "https://softat.co.in/wp-content/uploads/2024/07/image-27.png" alt = "Absoulte image" height = "250px" width = "250px">
-                            <img src = "/Frontend Development/Basic Html Files/images/Logo.png" alt = "Relative image" height = "250px" width = "250px">
+                            <p><b>Example:</b><br>
+                            &lt;img src = "https:www.facebook.com/uploads/Me.jpg" alt = "Me Absolute image" height = "250px" width = "250px"/&gt;<br>
+                            &lt;img src = "Logo.jpg" alt = "Logo Relative image" height = "250px" width = "250px"&gt;</p>
+                            <img src = "https://softat.co.in/wp-content/uploads/2024/07/image-27.png" alt = "Absolute image" height = "250px" width = "250px">
+                            <img src = "/Basic Stuff/images/Logo.png" alt = "Relative image" height = "250px" width = "250px">
                        </li>
                        <li><h4>BreakLine Tag</h4>
                            <p>It is the tag used to represent breaking the line in long paragraphs. It helps us to make our website more readable <br>
                            and visually pleasing.</p>
                            <p>We use <b>("&lt;br&gt;")</b> to break the line in our paragraphs. BreakLine Tag is a self closing tag too; same as the image tag.</p>
+                           <p><b>Example:</b> &lt;p&gt; This is a self-closing tag called Breakline.&lt;br&gt;<br>
+                           It is used to break the line for long paragraph.&lt;p&gt;</p>
                        </li>
-                       <li><h4>HorizontalLine Break Tag</h4>
+                       <li><h4>Horizontal Rule Tag</h4>
                            <p>It is the tag used to represent a thrematic break between paragraphs. It helps us to seperate section in efficient way.</p>
-                           <p>We use <b>("&lt;hr&gt;")</b> for horizontal line break in our paragraphs. HorizontalLine Break Tag is also a self closing tag.</p>
+                           <p>We use <b>("&lt;hr&gt;")</b> for horizontal rule in our paragraphs. Horizontal rule tag is also a self closing tag.</p>
+                           <p><b>Example:</b> &lt;p&gt; This is a self-closing tag called Horizontal Rule.&lt;p&gt;&lt;hr&gt;</p><hr>
                        </li>
                     </ul>
                 </div>
             </li>
-            <hr>
         </ol>
         </main> 
         <footer>
@@ -141,7 +166,7 @@
                 <li><a href="https://www.instagram.com/aaishajha17/">Instagram</a></li>
             </ul>
             <hr> 
-            <h3> Made with &hearts; by Aaisha Jha</h3>  
+            <h4> Made with <span style = "color: red"> &hearts;</span> by Aaisha Jha</h4> 
         </footer> 
     </body>
 </html>
