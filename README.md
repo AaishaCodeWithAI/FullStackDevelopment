@@ -109,6 +109,10 @@ This is a personal learning repository, but:
 
 * Suggestions are welcome
 * Feel free to fork and learn alongside
+---
+
+## 🤝 Acknowledgement
+These notes are intended for educational purposes only. The concepts are inspired by Apna College's learning resources, while the explanations, organization, refinements, and examples have been rewritten and expanded by me to make them easier to understand for beginners.
 
 ---
 
