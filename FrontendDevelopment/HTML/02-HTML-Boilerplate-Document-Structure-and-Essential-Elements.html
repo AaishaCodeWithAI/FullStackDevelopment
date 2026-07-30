@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "../Style.css">
+        <title>Day2</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Notes of Day-2</h1>
+                <p>This Notes will help you to understand a few basic concepts of HTML.</p>
+                <a href = "https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
+                <div>
+                    <nav>
+                        <li><a href = "Day1.html">Day 1 Notes</a><br></li>
+                        <li><a href = "Day2.html">Day 2 Notes</a><br></li>
+                        <li><a href = "Day3.html">Day 3 Notes</a></li>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div>
+                <ul>
+                    <div>
+                        <li><h2>HTML Boilerplate</h2>
+                            <p>HTML Boilerplate is the basic template or skeleton of every HTML document.<br>
+                            It contains the essential elements required for a web page to function correctly<br>
+                            in modern web browsers.<br>
+                            It serves as the starting point of any HTML.</p>
+                            <h3>Basic Boilerplate of HTML</h3>
+                            <div class="code">&lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                    &nbsp;&nbsp;&nbsp;&lt;head&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name = "viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    &nbsp;&nbsp;&nbsp;&lt;/head&gt;
+                                    &nbsp;&nbsp;&nbsp;&lt;body&gt;
+                                    &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                                &lt;/html&gt;
+                            </div>
+                            <p><b style = "color:red;">Note: </b>Write '!' in html document, then select it,and we will get the ready-made boilerplate for html.</p>
+                            <h3>Explantion of Boilerplate</h3>
+                            <ul>
+                                <li><h4>&nbsp;&lt;!DOCTYPE html&gt;</h4>
+                                    <p>It tells the browser that the document is written in HTML5, the latest version of HTML.<br>
+                                       It helps the browser display the webpage correctly.</p>
+                                </li>
+                                <li><h4>&nbsp;&lt;html&gt;</h4>
+                                    <p>It is the root element of every HTML document. All other HTML elements are written inside this tag.</p>
+                                        <p><b>Example:</b><br>
+                                            &nbsp;&lt;html&gt;<br>
+                                            &nbsp;&lt;/html&gt;
+                                        </p>
+                                </li>
+                                <li><h4>&nbsp;lang = "en"</h4>
+                                    <p>The lang attribute specifies the language of the webpage. It helps search engines, browsers, and screen <br>
+                                        readers understand the page's language.</p>
+                                        <p><b>Example:</b><br>
+                                            &nbsp;&lt;html lang = "en"&gt;<br>
+                                        </p>
+                                        <p><b style = "color:red;">Note:</b>The lang attribute does not translate a webpage or make it multilingual.<br>
+                                            It simply specifies the primary language of the document (or a specific element), helping browsers, search<br>
+                                            engines, screen readers, and other tools interpret the content correctly.</p>
+                                </li>
+                                <li><h4>&nbsp;&lt;head&gt;</h4>
+                                    <p>The head section contains information about the webpage, not the visible content.<br>
+                                       <b>It usually contains:</b>
+                                       <ul>
+                                            <li>Title</li>
+                                            <li>Meta tags</li>
+                                            <li>CSS and JS links</li>
+                                            <li>Icon (Favicon)</li>
+                                       </ul>
+                                       The content inside the &lt;head&gt; tag is not displayed on the webpage.
+                                    </p>
+                                </li>
+                                <li><h4>&nbsp;&lt;meta charset = "UTF-8"&gt;</h4>
+                                    <p>It specifies the character encoding used by the webpage. By charcter encoding, it <br>
+                                       means that they tell the browser which charcter encoding to save the HTML file to <br>
+                                       display the text correctly. As, we know computer doesn't store letters directly-they<br>
+                                       store binary numbers (0s and 1s). And, the charcter encoding is the standard that maps<br>
+                                       these numbers to charcter.<br>
+                                       While UTF-8 supports almost every charcter and symbol from different languages. It also<br>
+                                       allows special symbols and emoji to display correctly. Without it, some charcters may appear<br>
+                                       as strange symbols or question marks.</p>
+                                </li>
+                                <li><h4>&nbsp;&lt;meta name = "viewport" content = "width=device-width, initial scale=1.0"&gt;</h4>
+                                    <p>It makes the webpage responsive on different devices like mobiles, tablets, and laptops.<br>
+                                       Without this tag, webpages may not display properly on smaller screens.</p>
+                                </li>
+                                <li><h4>&nbsp;&lt;title&gt;</h4>
+                                    <p>The &lt;title&gt; tag specifies the title of the webpage.<br>
+                                       <b>The title appears:</b>
+                                       <ul>
+                                            <li>On the browser tab</li>
+                                            <li>In bookmarks</li>
+                                            <li>In search engine results</li>
+                                       </ul>
+                                       <b>Example:</b><br>
+                                          &nbsp;&lt;title&gt;My Portfolio&lt;/title&gt;</p>
+                                </li>
+                                <li><h4>&nbsp;&lt;body&gt;</h4>
+                                    <p>The <body> tag contains all the visible content of the webpage. Everything users see is <br>
+                                       written inside this tag.
+                                    <b>Examples include:</b>
+                                    <ul>
+                                        <li>Headings</li>
+                                        <li>Paragraphs</li>
+                                        <li>Images</li>
+                                        <li>Lists</li>
+                                        <li>Forms</li>
+                                        <li>Tables</li>
+                                        <li>Videos</li>
+                                    </ul></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><h2>HTML Structure</h2>
+                            <p>HTML is mainly divided into two sections.</p>
+                            <div>
+                                <h3>Head Section</h3>
+                                <ul>
+                                    <li>&lt;title&gt;: Page title</li>
+                                    <li>&lt;meta&gt;: Metadata</li>
+                                    <li>&lt;link&gt;: External CSS files</li>
+                                    <li>&lt;script&gt;: Javascript files</li>
+                                    <li>&lt;style&gt;: Internal CSS</li>
+                                    <li>&lt;base&gt;: Base URL for relative links</li>
+                                </ul>
+                            <p>It is not displayed to users.</p>
+                            </div>
+                            <div>
+                                <h3>Body Section</h3>
+                                <p>he Body section contains everything that is visible to the user.It contains visible content of<br>
+                                    the webpage, used to creating the webpages interface.</p>
+                                    <b>It includes: </b>All elements which users see.
+                                    <ul>
+                                        <li>Headings</li>
+                                        <li>Paragraphs</li>
+                                        <li>Images</li>
+                                        <li>Lists</li>
+                                        <li>Forms</li>
+                                        <li>Tables</li>
+                                        <li>Videos</li>
+                                        <li>Hyberlinks</li>
+                                        <li>buttons</li>
+                                    </ul>
+                            </div>
+                        </li>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        <li><h2>Inline vs Block Elements</h2></li>
+                        <ul>
+                            <div> 
+                                <li><h3>Block Elements</h3>
+                                    <p>Block Elements takes up the entire width no matter necessary<br>
+                                         or not for them, and they always begin from next line</p>
+                                </li>
+                            </div>
+                            
+                            <div>
+                                <li><h3>Inline Elements</h3>
+                                    <p>Inline Elements only takes the width necessary for them,<br>
+                                        and they don't begin from next line</p>
+                                    <p><b>Anchor Tags</b> are Inline Element.</p>
+                                    <a href = "https://www.w3schools.com/htmL/html_blocks.asp">w3school</a>
+                                    <a href = "https://www.tutorialspoint.com/html/html_blocks.htm">TutorialsPoint</a>
+                                    <br>
+                                    <p><b>Image tags</b> are also Inline Element.</p>
+                                    <img src ="https://th.bing.com/th/id/OIP.qRevKBbI1TeJbHhCrO2EaAHaEK?w=310&h=198&c=7&rs=1&bgcl=fffffe&r=0&o=6&dpr=1.5&pid=AlgoBlockDebug" alt="w3school inline vs block elements" height="200px" width = "200px">
+                                    <img src ="https://www.tutorialspoint.com/images/tp_hero_image.svg" alt = "TutorialsPointStart" height ="200px" width ="200px">
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div>
+                        <li><h2>Div vs Span Element</h2></li>
+                        <ul>
+                            <div>
+                                <li><h3>Div Element</h3></li>
+                                <p>It is also known as content division element. It just a container to hold <br>
+                                    other tags and group them together</p>
+                                <p>It is a block element</p>
+                                <div>
+                                    <a href = "https://www.w3schools.com/htmL/html_blocks.asp">w3school</a>
+                                    <a href = "https://www.tutorialspoint.com/html/html_blocks.htm">TutorialsPoint</a>
+                                </div>
+
+                                <div>
+                                    <img src ="https://th.bing.com/th/id/OIP.qRevKBbI1TeJbHhCrO2EaAHaEK?w=310&h=198&c=7&rs=1&bgcl=fffffe&r=0&o=6&dpr=1.5&pid=AlgoBlockDebug" alt="w3school inline vs block elements" height="200px" width = "200px">
+                                    <img src ="https://www.tutorialspoint.com/images/tp_hero_image.svg" alt = "TutorialsPointStart" height ="200px" width ="200px">
+                                </div>
+                                
+                            </div>
+
+                            <span>
+                                <li><h3>Span Element</h3></li>
+                                <p>It is a generic container used to hold other html elements or group elements<br>
+                                    together.</p>
+                                <p>It is a inline Element</p>
+                                <a href = "https://www.w3schools.com/htmL/html_blocks.asp">w3school</a>
+                                <a href = "https://www.tutorialspoint.com/html/html_blocks.htm">TutorialsPoint</a>
+                            </span>
+                            <span>
+                                <img src ="https://th.bing.com/th/id/OIP.qRevKBbI1TeJbHhCrO2EaAHaEK?w=310&h=198&c=7&rs=1&bgcl=fffffe&r=0&o=6&dpr=1.5&pid=AlgoBlockDebug" alt="w3school inline vs block elements" height="200px" width = "200px">
+                                <img src ="https://www.tutorialspoint.com/images/tp_hero_image.svg" alt = "TutorialsPointStart" height ="200px" width ="200px">
+                            </span>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <h1> Contact Me </h1>
+                <ul>
+                    <li><a href = "Basic_Portfolio.html">About Me</a><br></li>
+                    <li><b>Email</b>: jhaaaisha78@gmail.com</li>
+                    <li><b>Whatsapp</b>: 9819985307</li>
+                    <li><a href="https://github.com/AaishaCodeWithAI/">Github</a></li>
+                    <li><a href="https://www.facebook.com/aaisha.jha.612471">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/aaishajha17/">Instagram</a></li>
+                </ul>
+                <h4> Made with <span style = "color: red"> &hearts;</span> by Aaisha Jha</h4>
+            </div>
+        </footer>
+    </body>
+</html>
