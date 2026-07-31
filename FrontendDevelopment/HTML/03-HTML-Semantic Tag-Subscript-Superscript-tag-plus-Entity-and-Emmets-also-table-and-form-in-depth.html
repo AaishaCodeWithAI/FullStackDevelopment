@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "../Style.css">
         <title>Day3</title>
     </head>
     <body>
@@ -10,80 +11,190 @@
             <h1> Notes of Day 3 </h1> <!--For heading-->
             <p>This Notes will help you to understand a few concepts of HTML.</p>
             <ul>
-                <li><a href = "Basic_Portfolio.html">About Me</a><br></li>
                 <li><a href = "Day1.html">Day 1 Notes</a><br></li>
                 <li><a href = "Day2.html">Day 2 Notes</a><br></li>
                 <li><a href = "Day3.html">Day 3 Notes</a></li>
             </ul>
-            <hr>
         </header>
         <main>
             <div>
                 <ol type = "a"> <!--For Ordered List-->
-                    <ul><h2>Tables in HTML</h2>
-                        <p>Tables in HTML are used to represents real-life table data. It consists<br>
-                            rows and columns.</p>
-                        <ul>
-                            <li><b>Examples of Table:</b></li>
-                            <table border = "black">
-                                <caption><b>Student List</b></caption>
-                                <!--Table header-->
-                                <thead>
-                                    <tr>
-                                        <th>Student ID</th>
-                                        <th>Students Name</th>
-                                        <th>Age</th>
-                                        <th>Phone no</th>
-                                        <th colspan = "4">Core Subjects</th>
-                                    </tr>
-                                </thead>
-                                <!--Table body-->
-                                <tbody>
-                                    <tr>
-                                        <td>LC110001</td>
-                                        <td>Roy Lame</td>
-                                        <td>21</td>
-                                        <td>9812983012</td>
-                                        <td>Chemistry</td>
-                                        <td>Physic</td>
-                                        <td>Math</td>
-                                        <td>Biology</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LC110002</td>
-                                        <td>Sam Nale</td>
-                                        <td>23</td>
-                                        <td>9843920211</td>
-                                        <td>Chemistry</td>
-                                        <td>Physic</td>
-                                        <td>Math</td>
-                                        <td>Computer</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LC110003</td>
-                                        <td>Roniya Sant</td>
-                                        <td>22</td>
-                                        <td>9846381161</td>
-                                        <td>Chemistry</td>
-                                        <td>Physic</td>
-                                        <td>Social</td>
-                                        <td>Biology</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <li><h3>Semantics in Tables</h3>
-                                <p>Even the tables got semantic markup. It contains:</p>
-                                <ul>
-                                    <li>thead - to wrap table header.</li>
-                                    <li>tbody - to wrap table body.</li>
-                                    <li>tfoot - to wrap table footer</li>
-                                </ul>
-                            </li>
-                            <li><h3>Table ColSpan &amp; RowSpan Attributes</h3>
-                                <p>Used to create cells which spans over multiple rows and columns.</p>
-                            </li>
-                        </ul> 
-                        <ul><h2>Forms in/ HTML</h2>
+                    <div> 
+                        <li><h2>Superscript vs Subscript Tags</h2>
+                            <ul>
+                                <div>
+                                    <li><h3>Superscript Tag</h3>
+                                        <p>It is a tag which helps us to write formula and powers; where it comes at top<br>
+                                            and are small in size. </p>
+                                        <p><b>For example:</b> (a+b)<sup>2</sup></p>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li><h3>Subscript Tag</h3>
+                                        <p>It is a tag which helps us to write formula; where it comes at bottom and are<br>
+                                            small in size.</p>
+                                        <p><b>For example:</b> H<sub>2</sub>O</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                    </div>
+                    <div>
+                        <li><h2>Semantic vs Non-Semantic Markup</h2>
+                            <ul>
+                                <li><h3>Semantic Makeup</h3>
+                                    <p>It is the makeup that relates to the meaning of the content. It is used to make webpages<br>
+                                        meaningful, and the layout structured. It makes the wepages SEO(Search Engine Optimization)<br>
+                                        friendly. It helps to make website more readable and improve user experience.</p>
+                                    <p>
+                                        <h4>Common Example of Semantic Tags are:</h4>
+                                        <ul>
+                                            <li><b>Header</b>
+                                                <p>To write header (top) block.</p>
+                                            </li>
+                                            <li><b>Main</b>
+                                                <p>To write the main body block.</p>
+                                            </li>
+                                            <li><b>Footer</b>
+                                                <p>To write the footer (bottom) block. </p>
+                                            </li>
+                                            <li><b>Nav</b>
+                                                <p>To write a collection of links block.</p>
+                                            </li>
+                                            <li><b>Article</b>
+                                                <p>To write independent block like blog, article, anouncement, news, etc.</p>
+                                            </li>
+                                            <li><b>Section</b>
+                                                <p>To divide structure into different sections of related informations.</p>
+                                            </li>
+                                            <li><b>Aside</b>
+                                                <p>To write the content that is indirectly related to the main content of the <br>
+                                                page or section.</p>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li><h3>Non-Semantic Makeup</h3>
+                                    <p>It is the makeup that doesn't relate to the meaning of the content.They can be used with <br>
+                                        different attributes to mark up semantics common to a group.</p>
+                                    <p>
+                                        <h4>Common Exmaple of Non-Semantic Tags are:</h4>
+                                        <ul>
+                                            <li>Div</li>
+                                            <li>Span</li>
+                                        </ul>
+                                    </p>
+                                </li>
+                        
+                            </ul>
+                        </li>
+                    </div>
+                    <div>
+                        <li><h2>Some Important elements of HTML:</h2>
+                            <ul>
+                                <li><h3>Entity</h3>
+                                    <p>Entity is the special code that either are reserved meaning in html, can't be typed directly,<br>
+                                    or are special symbols.</p> 
+                                    <p>It ensures that the browser displays the character correctly instead of interpreting it as, <br>
+                                    HTML code.</p>
+                                    <ul><h4>Common example of Entities are: </h4>
+                                        <li><code>&amp;</code> - <b>And</b> Symbol using <b>&amp;amp;</b></li>
+                                        <li><code>&lt;</code> - <b>Less than</b> symbol using <b>&amp;lt;</b></li>
+                                        <li><code>&gt;</code> - for <b>greater than</b> symbol using <b>&amp;gt;</b></li>
+                                        <li><code>&quot;</code> - for <b>double quotation</b> symbol using <b>&amp;quot;</b></li>
+                                        <li><code>&hearts;</code> - for <b>heart</b> symbol using <b>&amp;hearts;</b></li>
+                                    </ul>
+                                    
+                                    <p>These symbols can't be directly displayed in brower through html as they are reserved and special<br>
+                                        symbols ones.</p>
+                                        
+                                    <p><b>To represent these symbol, we have to write:</b> ("&amp; + certain specific name + ;") or we can<br>
+                                        also write certain number code for these symbols from brower and use it.</p> 
+                                    <p><a href = "https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references">For more such entities:</a></p>
+                                </li>
+                                <li><h3>Emmets</h3>
+                                    <p>A essential toolkit which contains Collection of tools necessary for web developers that lets us write<br>
+                                    HTML and CSS much faster using short abbreviations that expand into full code snippets.</p>
+                                
+                                    <ul><h4>Common Example of Emmets are:</h4>
+                                        <li><code>!</code> - For bollerplate code of html</li>
+                                        <li><code>!!!</code> - For html5 <!DOCTYPE html></li>
+                                        <li><code>ul>li*3</code> - For unordered list with three listing dataspace.</li>
+                                        <li><code>nav>ul>li*4>a</code> - Nested navigation list with 4 links</li>
+                                    </ul>
+                                    <a href = "https://docs.emmet.io/cheat-sheet">For more such emmets</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div>
+                        <li><h2>Tables in HTML</h2>
+                            <p>Tables in HTML are used to represents real-life table data. It consists<br>
+                                rows and columns.</p>
+                            <ul>
+                                <li><b>Examples of Table:</b></li>
+                                <table border = "black">
+                                    <caption><b>Student List</b></caption>
+                                    <!--Table header-->
+                                    <thead>
+                                        <tr>
+                                            <th>Student ID</th>
+                                            <th>Students Name</th>
+                                            <th>Age</th>
+                                            <th>Phone no</th>
+                                            <th colspan = "4">Core Subjects</th>
+                                        </tr>
+                                    </thead>
+                                    <!--Table body-->
+                                    <tbody>
+                                        <tr>
+                                            <td>LC110001</td>
+                                            <td>Roy Lame</td>
+                                            <td>21</td>
+                                            <td>9812983012</td>
+                                            <td>Chemistry</td>
+                                            <td>Physic</td>
+                                            <td>Math</td>
+                                            <td>Biology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LC110002</td>
+                                            <td>Sam Nale</td>
+                                            <td>23</td>
+                                            <td>9843920211</td>
+                                            <td>Chemistry</td>
+                                            <td>Physic</td>
+                                            <td>Math</td>
+                                            <td>Computer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LC110003</td>
+                                            <td>Roniya Sant</td>
+                                            <td>22</td>
+                                            <td>9846381161</td>
+                                            <td>Chemistry</td>
+                                            <td>Physic</td>
+                                            <td>Social</td>
+                                            <td>Biology</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <li><h3>Semantics in Tables</h3>
+                                    <p>Even the tables got semantic markup. It contains:</p>
+                                    <ul>
+                                        <li>thead - to wrap table header.</li>
+                                        <li>tbody - to wrap table body.</li>
+                                        <li>tfoot - to wrap table footer</li>
+                                    </ul>
+                                </li>
+                                <li><h3>Table ColSpan &amp; RowSpan Attributes</h3>
+                                    <p>Used to create cells which spans over multiple rows and columns.</p>
+                                </li>
+                            </ul> 
+                        </li>
+                    </div>
+                    <div>
+                        <li><h2>Forms in/ HTML</h2>
                             <p>Forms are used to collect data from user.</p>
                             <ul>
                                 <li><h3>Example of Form:</h3></li>
@@ -228,8 +339,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </ul>
-                    </li>
+                        </li>
+                    </div> 
                 </ol>
             </div>
         </main>
@@ -237,13 +348,14 @@
             <div>
                 <h1> Contact Me </h1>
                 <ul>
+                    <li><a href = "Basic_Portfolio.html">About Me</a><br></li>
                     <li><b>Email</b>: jhaaaisha78@gmail.com</li>
                     <li><b>Whatsapp</b>: 9819985307</li>
                     <li><a href="https://github.com/AaishaCodeWithAI/">Github</a></li>
                     <li><a href="https://www.facebook.com/aaisha.jha.612471">Facebook</a></li>
                     <li><a href="https://www.instagram.com/aaishajha17/">Instagram</a></li>
                 </ul>
-                <h3> Made with &hearts; by Aaisha Jha</h3>
+                <h4> Made with <span style = "color: red"> &hearts;</span> by Aaisha Jha</h4>
             </div>
         </footer>
 </body>
