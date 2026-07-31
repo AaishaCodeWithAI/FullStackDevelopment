@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "../Style.css">
+        <link rel = "favicon" href = "Logo.ico">
         <title>Day3</title>
     </head>
     <body>
@@ -201,47 +202,47 @@
                                 <form action = "/action">
                                     <div>
                                         <label for = "username"> Username: </label>
-                                        <input type = "text" id = "username" name = "Username" placeholder = "Enter your username" required/> 
+                                        <input type = "text" id = "username" name = "Username" autocomplete="name" placeholder = "Enter your username" required/> 
                                     </div>
                                     <div>
                                         <label for = "password"> Password:  </label>
-                                        <input type = "password" id = "password" name = "Password" placeholder = "Enter the password" required/> 
+                                        <input type = "password" id = "password" name = "Password" autocomplete="current-password" placeholder = "Enter the password" required/> 
                                     </div>
                                     <div>
                                         <label for = "number"> Enter Age: </label>
-                                        <input type = "number" id = "number" placeholder = "Enter your Age" name = "Age"/> 
+                                        <input type = "number" id = "number" autocomplete="number" placeholder = "Enter your Age" name = "Age"/> 
                                     </div>
                                     <div>
                                         <label for = "checkbox">I am 18+</label>
-                                        <input type = "checkbox" id = "checkbox" name = "checkbox">
+                                        <input type = "checkbox" id = "checkbox" autocomplete = "checkbox" name = "checkbox">
                                     </div>
                                     <div><h4>Select your gender</h4>
                                         <div>
-                                            <input type="radio" id="Male" name="gender" value="Male"/>
-                                            <label for="Female">Male</label>
+                                            <input type="radio" id="Male" name="gender" autocomplete= "gender" value="Male"/>
+                                            <label for="Male">Male</label>
                                         </div>
                                         <div>
-                                            <input type="radio" id="Female" name="gender" value="Female"/>
+                                            <input type="radio" id="Female" name="gender" autocomplete= "gender" value="Female"/>
                                             <label for="Female">Female</label>
                                         </div>
                                         <div>
-                                            <input type="radio" id="Other" name="gender" value="Other"/>
+                                            <input type="radio" id="Other" name="gender" autocomplete= "gender" value="Other"/>
                                             <label for="Other">Other</label>
                                         </div>
                                         <div>
-                                            <input type="radio" id="Not to Say" name="gender" value="Prefer Not to say"/>
-                                            <label for="Not to say">Prefer Not to say</label>
+                                            <input type="radio" id="Not to Say" name="gender" autocomplete= "gender" value="Prefer Not to say"/>
+                                            <label for="Not to Say">Prefer Not to say</label>
                                         </div>
                                     </div>
                                     <div>
                                         <label for="city-select">Choose your city:</label>
                                         <select name="City" id="city-select">
-                                        <option value="">--Please choose an option--</option>
-                                        <option value="kathamandu">Kathmandu</option>
-                                        <option value="pokhara">Pokhara</option>
-                                        <option value="lumbini">Lumbini</option>
-                                        <option value="mirchiya">Mirchiya</option>
-                                        <option value="birjung">Birjung</option>
+                                            <option value="">--Please choose an option--</option>
+                                            <option value="kathamandu">Kathmandu</option>
+                                            <option value="pokhara">Pokhara</option>
+                                            <option value="lumbini">Lumbini</option>
+                                            <option value="mirchiya">Mirchiya</option>
+                                            <option value="birjung">Birjung</option>
                                         </select>
                                     </div>
                                     <div>
