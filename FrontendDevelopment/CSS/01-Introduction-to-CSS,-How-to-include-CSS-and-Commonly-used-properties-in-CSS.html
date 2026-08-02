@@ -3,20 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "../Style.css">
         <title>Day4</title>
     </head>
     <body>
         <header>
             <div>
                 <h1>Notes of Day-1</h1>
-                <p>This Notes will help you to understand a few basic concepts of CSS.</p>
+                <p>Basic Concept of CSS, how to include CSS, and basic properties like color, background-color, color system, text properties, and font-size and family.</p>
                 <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
                 <div>
                     <ul>
-                        <li><a href = "Basic_Portfolio.html">About Me</a><br></li>
-                        <li><a href = "Day1.html">Day 1 HTML Notes</a><br></li>
-                        <li><a href = "Day2.html">Day 2 HTML Notes</a><br></li>
-                        <li><a href = "Day3.html">Day 3 HTML Notes</a></li>
+                        <li><a href = "../HTML">HTML Notes</a></li>
+                        <li><a href = "../CSS">CSS Notes</a></li>
                     </ul>
                 </div>
             </div>  
@@ -26,10 +25,10 @@
                 <ul>
                     <div>
                         <li><h2>Introduction to CSS</h2>
-                            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of<br>
-                            a document written in HTML or XML (including XML dialects such as SVG, MathML or<br> 
-                            XHTML). CSS describes how elements should be rendered on screen, on paper, in speech,<br>
-                            or on other media. It is just a language that is used to describe the style of a document.</p>
+                            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of
+                            a document written in HTML or XML (including XML dialects such as SVG, MathML or
+                            XHTML). CSS describes how elements should be rendered on screen, on paper, in speech,
+                            or on other media. It is just a language that is used to describe the style of a document.
                         
                             <h3>Basic Structure of CSS</h3>
                             <p>
@@ -65,7 +64,7 @@
                                     <p>Writting CSS in a seperate document and linking it with HTML file.</p>
                                     <p>So, linking HTML with CSS file:<br>
                                         &lt;head&gt;<br>
-                                        &lt;link rel="Stylesheet" href= "Style.css"&gt;<br>
+                                        &nbsp;&lt;link rel="Stylesheet" href= "Style.css"&gt;<br>
                                         &lt;/head&gt;<br>
                                     </p>
                                 </li>
@@ -125,10 +124,9 @@
                                     <ul>
                                         <li><b>text-align:</b> Left, right, center, justify | start (english) | end (arabic)</li>
                                         <li><b>font-weight:</b> How much bold, light should the text be?
-                                            <p><b>range:</b> 100-900, <b>Normal:</b> 400, <b>Light:</b> x&lt;400, <br>
-                                                <b>Bold:</b> x&gt;400</p>
+                                            <p><b>range:</b> 100-900, <b>Normal:</b> 400, <b>Light:</b> x&lt;400, <b>Bold:</b> x&gt;400</p>
                                         </li>
-                                        <li>text-decoration:For line-through, down-line, and overline.
+                                        <li><b>text-decoration: </b>For line-through, down-line, and overline.
                                             <p>Sets apperance of decorative line on text like underline.</p>
                                             <p>
                                                 Text Decoration: 
@@ -141,66 +139,61 @@
                                             <ul><h4>Mostly used text-decoration:-</h4>
                                                 <li>Underline</li>
                                                 <li>line-through</li>
-                                                <li>to remove default underline from anchor tag.
-                                                    a { 
-                                                        text-decoration: none;
-                                                    }
+                                                <li>to remove default underline from anchor tag.<br>
+                                                    a { <br>
+                                                        text-decoration: none;<br>
+                                                    }<br>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><p><b><code>line-height:</code></b> <code>normal;</code> <code>2.5;</code> &rarr; It means <br>
-                                            2.5 times the normal size.</p></li>
+                                        <li><p><b><code>line-height:</code></b> <code>normal;</code> <code>2.5;</code> &rarr; It means 2.5 times the normal size.</p></li>
                                         <li><p><b><code>line-height:</code></b> <code>3em;</code> <code>150%;</code> <code>32px;</code></p></li>
                                         <li><p><b><code>letter-spacing:</code></b> <code>normal;</code> <code>2px;</code></p></li>
                                     </ul>
                                 </li>
-                                <li><h3>font-size Units in CSS:</h3>
-                                    <table border="1">
-                                        <tr>
-                                            <th>Absolute</th>
-                                            <th>Relative</th>
-                                        </tr>
-                                        <tr>
-                                            <td>px</td>
-                                            <td>%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>pt</td>
-                                            <td>em</td>
-                                        </tr>
-                                        <tr>
-                                            <td>pc</td>
-                                            <td>rem</td>
-                                        </tr>
-                                        <tr>
-                                            <td>cm</td>
-                                            <td>ch</td>
-                                        </tr>
-                                        <tr>
-                                            <td>mm</td>
-                                            <td>rh</td>
-                                        </tr>
-                                        <tr>
-                                            <td>in</td>
-                                            <td>rw + many more</td>
-                                        </tr>
-                                    </table>
-                                    <p><b>Notes:</b> In absolute, px, pt, and pc are the most common while cm, mm, and in are rarely used.
-                                    <b>The VVI points are:</b> 1In->96px, 72pts->1In, 12pts->1pc. <b>Although, pixels(px) is mostly <br>
-                                        commonly used absolute units, but it is not suitable for responsive website.</b></p>
-                                </li>
-                                <li><b>font-family:</b>arial, Serif, Time New Roman and many more.</li>
+                                <li><h3>Font-size Units in CSS:</h3>
+                                <table border="1">
+                                    <tr>
+                                        <th>Absolute</th>
+                                        <th>Relative</th>
+                                    </tr>
+                                    <tr>
+                                        <td>px</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pt</td>
+                                        <td>em</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pc</td>
+                                        <td>rem</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cm</td>
+                                        <td>ch</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mm</td>
+                                        <td>rh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>in</td>
+                                        <td>rw + many more</td>
+                                    </tr>
+                                </table>
+                                <li><b>font-family:</b> <p></p>A style property used to specify the interface of text within an element.<br>
+                                    <b>Example: </b>sansrif, Time New Roman, and Roboto.</p></li>
                             </ul>
                         </li>
                     </div>
                 </ul>
             </div>
-            <h3 style="color:red;">Next Topic, we will cover selector, pseudo class and pseudo elements and cascade, selector specifiltity and ,br>
-                Inline specificity.</h3>
         </main>
         <footer>
             <h2> Contact Me </h2>
             <ul>
+                 <li><a href = "../Basic Stuff/Basic_Portfolio.html">About Me</a><br></li>
                 <li><b>Email</b>: jhaaaisha78@gmail.com</li>
                 <li><b>Whatsapp</b>: 9819985307</li>
                 <li><a href="https://github.com/AaishaCodeWithAI/">Github</a></li>
@@ -208,7 +201,7 @@
                 <li><a href="https://www.instagram.com/aaishajha17/">Instagram</a></li>
             </ul>
             <hr>
-            <h4> Made with &hearts; by Aaisha Jha</h4>
+            <h4> Made with <span style = "color: red"> &hearts;</span> by Aaisha Jha</h4>
         </footer>
     </body>
 </html>
