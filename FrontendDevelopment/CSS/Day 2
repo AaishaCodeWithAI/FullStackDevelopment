@@ -3,21 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Day5</title>
+        <link rel = "stylesheet" href = "../Style.css">
+        <title>Day 5</title>
     </head>
     <body>
         <header>
             <div>
                 <h1>Notes of Day-2</h1>
-                <p>This Notes will help you to understand a foundational concepts of CSS.</p>
+                <p>Learn about Selectors, Pseudo class, Pseudo elements, Cascade, Selector Specificity and Inline Specificity in CSS</p>
                 <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
                 <div>
                     <ul>
-                        <li><a href = "../Basic Stuff/Basic_Portfolio.html">About Me</a><br></li>
-                        <li><a href = "../HTML/Day1.html">Day 1 HTML Notes</a><br></li>
-                        <li><a href = "../HTML/Day2.html">Day 2 HTML Notes</a><br></li>
-                        <li><a href = "../HTML/Day3.html">Day 3 HTML Notes</a></li>
-                        <li><a href = "Day 1 CSS.html">Day 1 CSS Notes</a></li>
+                        <li><a href = "../HTML">HTML Notes</a></li>
+                        <li><a href = "../CSS">CSS Notes</a></li>
                     </ul>
                 </div>
             </div>  
@@ -30,73 +28,73 @@
                             <ul>
                                 <li><b>Universal Selector:</b>
                                     <p>To select everything in the document.</p>
-                                    <p>
-                                        * {
-                                            property:value;
-                                        }
+                                    <p><b>Example:</b><br>
+                                        * {<br>
+                                            property:value;<br>
+                                        }<br>
                                         where '*' is the universal selector.
                                     </p>
                                 </li>
                                 <li><b>Element Selector:</b>
                                     <p>Select all elements of the same type.</p>
-                                    <p>
-                                        h1 {
-                                            property:value;
-                                        }
+                                    <p><b>Example:</b>
+                                        h1 {<br>
+                                            &nbsp;property:value;<br>
+                                        }<br>
                                         where 'h1' is the element selector.
                                     </p>
                                 </li>
                                 <li><b>ID Selector:</b>
                                     <p>Select an element based on the value of the elements id alternative.</p>
-                                    <p>
-                                        #myId {
-                                            property:value;
-                                        }
+                                    <p><b>Example:</b>
+                                        #myId {<br>
+                                            &nbsp;property:value;<br>
+                                        }<br>
                                         where 'myId' is the id selector and always remember to put '#' ahead of any id selector.
                                     </p>
                                 </li>
                                 <li><b>Class Selector:</b>
                                     <p>Selects an element based on their class attribute.</p>
-                                    <p>
-                                        .myclass {
-                                            property:value;
-                                        }
+                                    <p><b>Example:</b>
+                                        .myclass {<br>
+                                            &nbsp;property:value;<br>
+                                        }<br>
                                         where 'myclass' is the class selector and always remember to put '.' ahead of any class selector.
                                     </p>
                                 </li>
                                 <li><b>Descendent Selector</b>
                                     <p>Selects all paragraphs inside divs.</p>
-                                    <p>
-                                        div p {
-                                            property:value;
-                                        }
+                                    <p><b>Example:</b>
+                                        div p {<br>
+                                            &nbsp;property:value;<br>
+                                        }<br>
                                         where 'div p' is the desecendent selector and always remember to have gap in between.
                                     </p>
                                 </li>
                                 <li><b>Sibling Combinator:</b>
                                     <p>Heading 3 that comes immediately after any paragraph.</p>
-                                    <p>
-                                        p + h3 {
-                                           property:value; 
-                                        }
+                                    <p><b>Example</b>
+                                        p + h3 {<br>
+                                           &nbsp;property:value;<br>
+                                        }<br>
                                         where '+' is the sibling combinator.
                                     </p>
                                 </li>
                                 <li><b>Child Combinator:</b>
                                     <p>Selects all buttons within which are direct children of spans.</p>
-                                    <p>
-                                        span > button {
-                                            property: value;
-                                        }
+                                    <p><b>Example:</b>
+                                        span > button {<br>
+                                            &nbsp;property: value;<br>
+                                        }<br>
                                         where '>' is the child combinator.
                                     </p>
                                 </li>
                                 <li><b>Attribute Selector:</b>
                                     <p>Selects element based on the presence or value of a given attribute.</p>
-                                    <p>
-                                        input [attr = "value"] {
-                                            property: value;
-                                        }
+                                    <p><b>Example:</b>
+                                        input [attr = "value"] {<br>
+                                            &nbsp;property: value;<br>
+                                        }<br>
                                         where input [attr = "-"] is the attribute selector.
                                     </p>
                                 </li>
@@ -122,8 +120,9 @@
                     </div>
                     <div>
                         <li><h2>CSS:Cascading Style Sheets:</h2>
-                            <p><b>Cascade in CSS:</b>The CSS cascade algorithm's job is to select CSS declaration in order<br>
-                            to determine the correct values for CSS properties. (For same selector)</p>
+                            <p><b>Cascade in CSS:</b><br>
+                            The CSS cascade algorithm's job is to select CSS declaration in order
+                            to determine the correct values for CSS properties. (for same selector)</p>
                             <h3>Selector Specificity (for different selector):</h3>
                             <p>An algorithm that calculates the weight that is applied to given CSS declaration.</p>
                             <p>_____ id ________ class, attribute and pseudo-class ________ element and pseudo element</p>
@@ -143,6 +142,7 @@
         <footer>
             <h2> Contact Me </h2>
             <ul>
+                <li><a href = "Basic_Portfolio.html">About Me</a><br></li>
                 <li><b>Email</b>: jhaaaisha78@gmail.com</li>
                 <li><b>Whatsapp</b>: 9819985307</li>
                 <li><a href="https://github.com/AaishaCodeWithAI/">Github</a></li>
@@ -150,7 +150,7 @@
                 <li><a href="https://www.instagram.com/aaishajha17/">Instagram</a></li>
             </ul>
             <hr>
-            <h4> Made with &hearts; by Aaisha Jha</h4>
+            <h4> Made with <span style = "color: red"> &hearts;</span> by Aaisha Jha</h4>
         </footer>
     </body>
 </html>
