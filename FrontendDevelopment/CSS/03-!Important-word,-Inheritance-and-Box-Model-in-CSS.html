@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../Style.css">
+    <title>Day 6</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Notes of Day-3</h1>
+            <p>Learn about !important, Inheritance, and Box Model in CSS.</p>
+            <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+            <div>
+                <ul>
+                    <li><a href = "../HTML">HTML Notes</a></li>
+                    <li><a href = "../CSS">CSS Notes</a></li> 
+                </ul>
+            </div>
+        </div>  
+    </header>
+    <main>
+        <div>
+            <h2>!important:</h2>
+            <ul>
+                <li>Not used often in class.</li>
+                <li>To show the most specific thing in document.</li>
+                <li>hightest property stuff in CSS Style Sheet.</li>
+            </ul>
+            <h2>Inheritance in CSS:</h2>
+            <p>Inheritance in CSS is the mechanism by which certain properties are automatically passed
+                down from a parent element to its child elements.</p>
+            <p><b>Example:</b><br>
+                &nbsp;&nbsp;&nbsp;div {<br>
+                &nbsp;&nbsp;&nbsp;background-color: red;<br>
+                &nbsp;&nbsp;&nbsp;}
+            </p>
+            <h3>The hierarchical level:</h3>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;In div<br>
+                &nbsp;&nbsp;&nbsp;|<br>
+                &nbsp;&nbsp;&nbsp;p<br>
+                &nbsp;&nbsp;&nbsp;|<br>
+                &nbsp;&nbsp;&nbsp;ul<br>
+                &nbsp;&nbsp;&nbsp;|<br>
+                &nbsp;&nbsp;li (li inherit properties from div)<br>
+            </p> 
+            <ul><h3>Properties that can't be inherited:</h3>
+                <li>width</li>
+                <li>height</li>
+                <li>border and many more</li>
+            </ul>
+
+            <h2>Box Model in CSS:-</h2>
+
+            <img src = "Box Model.jpg" alt = "Box Model" width = "300px" height = "250px"/>
+            <ul>
+                <li><h3>Height:</h3>
+                    <p>By default, it sets area height of the element.</p>
+                    <p><b>Example</b></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                        &nbsp;&nbsp;&nbsp;height: 100px; <br>
+                        &nbsp;&nbsp;&nbsp;}
+                    </p>
+                </li>
+
+                <li><h3>Width:</h3>
+                    <p>By default, it sets content area width of the element.</p>
+                    <p><b>Example</b></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                        &nbsp;&nbsp;&nbsp;width: 300px;<br>
+                        &nbsp;&nbsp;&nbsp;}
+                    </p>
+                </li>
+
+                <li><h3>Border:</h3>
+                    <p>It is used to set the element's border.</p>
+                    <ul>
+                        <li>border-width</li>
+                        <li>border-style</li>
+                        <li>border-color</li>
+                    </ul>
+                    <p><b>Example</b></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                        &nbsp;&nbsp;&nbsp;border-width: 2px;<br>
+                        &nbsp;&nbsp;&nbsp;border-style: solid;<br>
+                        &nbsp;&nbsp;&nbsp;border-color: red;<br>
+                        &nbsp;&nbsp;&nbsp;}
+                    <p>
+                    
+                    <h4>Border Shorthand:</h4><br>
+                        <p>width|style|color</p>
+                    <p><b>Example:</b></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                        &nbsp;&nbsp;&nbsp;border: 2px|solid|red;<br>
+                        &nbsp;&nbsp;&nbsp;}
+                    </p>
+
+                    <h4>Border Slides:</h4><br>
+                    <p> It is used to control an individual slide of the box.</p>
+                    <p><b>Example:</b></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                        &nbsp;&nbsp;&nbsp;border-left-color: black;<br>
+                        &nbsp;&nbsp;&nbsp;border-left-style: dashed;<br>
+                        &nbsp;&nbsp;&nbsp;}
+                    </p>
+
+                    <h4>Border radius:</h4><br>
+                    <p>It is used to round the corners of an element's outer border edge.</p>
+                    <p><b>Example:</b></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;div { <br>
+                        &nbsp;&nbsp;&nbsp;border-radius: 15px; <br>
+                        &nbsp;&nbsp;&nbsp;} <br>
+                        &nbsp;&nbsp;&nbsp;div { <br>
+                        &nbsp;&nbsp;&nbsp;border-radius: 50%; <br>
+                        &nbsp;&nbsp;&nbsp;} <br>
+                        where 50% turns box into circle. 
+                    </p>
+                    <p>We can control the individual sides of the corner of the box.</p>
+                    <p><b>Example:</b></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                        &nbsp;&nbsp;&nbsp;border-top-right-radius: 15px;<br>
+                        &nbsp;&nbsp;&nbsp;}<br>
+                    </p>
+                </li>
+
+                <li><h3>Padding:</h3>
+                    <p>It is used to control remaining area of the box after the content.</p>
+                    <p><b>Example:</b></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                        &nbsp;&nbsp;&nbsp;padding-top: 10px;<br>
+                        &nbsp;&nbsp;&nbsp;}
+                    </p>
+                    <h4>Padding Shorthand:</h4>
+                    <ul>
+                        <li>For all 4 slides:
+                            <p>padding: 50px;</p>
+                        </li>
+                        
+                        <li>For top and bottom|left and right slides:
+                            <p>padding: 1px 2px;</p>
+                        </li>
+
+                        <li>For top | left and right | bottom slides:
+                            <p>padding: 1px 2px 3 px;</p>
+                        </li>
+
+                        <li>For *clockwise, top|right|bottom|left slides:
+                            <p>padding: 1px 2px 3 px 4 px;</p>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li><h3>Margin:</h3>
+                    <p>It is used to set spacing on the outside thr border for between two boxes.</p>
+                    <p><b>Example:</b></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                        &nbsp;&nbsp;&nbsp;margin-left: 50px;<br>
+                        &nbsp;&nbsp;&nbsp;}
+                    </p>
+                    <h4>Margin Shorthands:</h4>
+                    <ul>
+                        <li>For all 4 slides:
+                            &nbsp;&nbsp;&nbsp;<p>margin: 50px;</p>
+                        </li>
+                        
+                        <li>For top and bottom|left and right slides:
+                            &nbsp;&nbsp;&nbsp;<p>margin: 1px 2px;</p>
+                        </li>
+
+                        <li>For top | left and right | bottom slides:
+                            &nbsp;&nbsp;&nbsp;<p>margin: 1px 2px 3 px;</p>
+                        </li>
+
+                        <li>For *clockwise, top|right|bottom|left slides:
+                            &nbsp;&nbsp;&nbsp;<p>margin: 1px 2px 3 px 4 px;</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <h2> Contact Me </h2>
+        <ul>
+            <li><a href = "../Basic Stuff/Basic_Portfolio.html">About Me</a><br></li>
+            <li><b>Email</b>: jhaaaisha78@gmail.com</li>
+            <li><b>Whatsapp</b>: 9819985307</li>
+            <li><a href="https://github.com/AaishaCodeWithAI/">Github</a></li>
+            <li><a href="https://www.facebook.com/aaisha.jha.612471">Facebook</a></li>
+            <li><a href="https://www.instagram.com/aaishajha17/">Instagram</a></li>
+        </ul>
+        <hr>
+        <h4> Made with <span style = "color: red"> &hearts;</span> by Aaisha Jha</h4>
+    </footer>
+</body>
+</html>
