@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../Style.css">
+    <title>Day 8</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Notes of Day-4</h1>
+            <p>Basic Concept of CSS, font-size, display, opacity, and revision on inline-block.</p>
+            <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+            <div>
+                <ul>
+                    <li><a href = "../HTML">HTML Notes</a></li>
+                    <li><a href = "../CSS">CSS Notes</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>  
+    <main>
+        <div>
+            <ul>
+                <li><h2>Revision: Inline vs Block Elements</h2>
+                    <h3>Block Elements</h3>
+                    <p>Takes up the full-width available (whole block). It starts from the new line.</p>
+                    <h3>Inline Elements</h3>
+                    <p>Takes up only necessary width required for its self.</p>
+                </li>
+                <li><h2>Display</h2> 
+                    <i>Before we learned about inline and block.</i>
+                    <p>It sets wheather an element is treated as a block or a inline element and the layout used for its children.</p>
+                    <p><b>Example:</b><br>
+                    &nbsp;&nbsp;&nbsp; display: inline;<br>
+                    &nbsp;&nbsp;&nbsp; display: block;
+                </p>
+                </li>
+                <li><h2>Display with inline-block</h2>
+                    <p>When we set any element's display to inline-block; then the element style is according to block, but it behaves as inline element.</p>
+                    <p><b>Example:</b><br>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:inline-block;<br>  
+                        &nbsp;&nbsp;&nbsp;}<br>
+                    </p>
+                    <p><b>Note: </b>We use display: none; to hide an element's display.</p>
+                </li>
+                <li><h2>Revision: Units in CSS</h2>
+                    <table border="1">
+                        <tr>
+                            <th>Absolute</th>
+                            <th>Relative</th>
+                        </tr>
+                        <tr>
+                            <td>px</td>
+                            <td>%</td>
+                        </tr>
+                        <tr>
+                            <td>pt</td>
+                            <td>em</td>
+                        </tr>
+                        <tr>
+                            <td>pc</td>
+                            <td>rem</td>
+                        </tr>
+                        <tr>
+                            <td>cm</td>
+                            <td>ch</td>
+                        </tr>
+                        <tr>
+                            <td>mm</td>
+                            <td>rh</td>
+                        </tr>
+                        <tr>
+                            <td>in</td>
+                            <td>rw + many more</td>
+                        </tr>
+                    </table>
+                </li>
+                <li><h2>Percentage (%)</h2>
+                    <p>It is often used to define a size as relative to an element's parent object.</p>
+                    <p><b>Example:</b><br>
+                        &nbsp;&nbsp;&nbsp;width: 33.33% //relative to the parent.<br>
+                        &nbsp;&nbsp;&nbsp;margin-left: 50% //relative to the parent size.
+                    </p>
+                </li>
+                <li><h2>Em</h2>
+                    <p>It is often used to define the font-size with respect to its parents, in case
+                       of typographical properties like font-size, and with respect to itself, in
+                       case of other properties like width.
+                    </p>
+                    <p><b>Example:</b><br>
+                        &nbsp;&nbsp;&nbsp;div {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 0.5em; //means half of the parent's
+                            font-size.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 1em; //means exact same padding as 
+                            its respect to its font-size element.<br>
+                        &nbsp;&nbsp;&nbsp;}<br>
+                    </p>
+                    <p><h3>Drawback of em</h3>
+                        Snowball effect in nested elements.
+                    </p>
+                </li>
+                <li><h2>Rem</h2>
+                    <p>It was brought to counter the drawback of em. Rem (Root em). It is often used to define
+                        font-size of the element with respect to its root element.</p>
+                </li>
+                <li><h2>Alpha Chanel</h2>
+                    <p>Sets the opacity for a color.<br>
+                       Alpha range: 0-1 / 00-ff<br>
+                       0 -> Hidden <br>
+                       rgba (255, 255, 255, 0.3) <br>
+                    </p> 
+                </li>
+                <li><h2>Opacity</h2>
+                    <p>Sets the opacity for the element.<br>
+                        Range from 0 to 1<br>
+                        0 -> Hidden<br>
+                        <b>Example: </b>opacity: 0.5;
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </main> 
+    <footer>
+        <h2> Contact Me </h2>
+        <ul>
+            <li><a href = "../Basic Stuff/Basic_Portfolio.html">About Me</a><br></li>
+            <li><b>Email</b>: jhaaaisha78@gmail.com</li>
+            <li><b>Whatsapp</b>: 9819985307</li>
+            <li><a href="https://github.com/AaishaCodeWithAI/">Github</a></li>
+            <li><a href="https://www.facebook.com/aaisha.jha.612471">Facebook</a></li>
+            <li><a href="https://www.instagram.com/aaishajha17/">Instagram</a></li>
+        </ul>
+        <h4> Made with <span style = "color: red"> &hearts;</span> by Aaisha Jha</h4>
+    </footer> 
+</body>
+</html>
