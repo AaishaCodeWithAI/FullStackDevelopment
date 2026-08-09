@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "../Style.css">
+        <title>Day 9</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Notes of Day-5</h1>
+                <p>CSS Transitions, Box-Shadow, Background Image, How to Create a card Hover effect, Positions property of elements.</p>
+                <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+                <div>
+                    <ul>
+                        <li><a href = "../HTML">HTML Notes</a></li>
+                        <li><a href = "../CSS">CSS Notes</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </header>
+        <main>
+            <div>
+                <ul>
+                    <div>
+                        <li><h2>CSS Transitions</h2>
+                            <div>
+                                <p>It enable us to define the transition between two states of any element.</p>
+                                <p><b>Example:</b><br>
+                                    <div style = " display: flex; justify-content: space-evenly;">
+                                        <div style = "background-color:aqua; width:150px; height:60px;">
+                                            <p><b style = "font-size:25px; padding: 20px;">Click me</b></p>
+                                        </div>
+                                        <div>
+                                            <p><b style="font-size:10px; padding: 20px; bottom:30px;"> (Transistion Phase) &gt; (When we hover) </b></p>
+                                        </div>
+                                        <div style = "background-color:skyblue; width:150px; height:60px; border-radius: 50%;">
+                                            <p><b style = "font-size:10px; padding: 20px;">Me after you clicked.</b></p>
+                                        </div>
+                                    </div>
+                                    <div> 
+                                        <br>
+                                        <b style="font-size: 15px;">In CSS:</b>
+                                        <p>
+                                            &nbsp;&nbsp;&nbsp;div { <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 200px; <br> <!-- This is the first phase -->
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 200px; <br> 
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:aqua; <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition-duration:1s; <br>
+                                            &nbsp;&nbsp;&nbsp;}<br>
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;div:hover { <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:skyblue; <br> <!-- This is second phase when hover -->
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 50%; <br> <!-- This turns the div box into a oval shape -->
+                                            &nbsp;&nbsp;&nbsp;}
+                                        </p>
+                                    </div>
+                                </p>
+                            </div>
+                            <div>
+                                <h3>Transition-Shorthand</h3>
+                                <div>
+                                    <p>Property Name | duration | timing-function | delay </p> 
+                                    <p><b>Example:</b><br>
+                                        &nbsp;&nbsp;&nbsp;margin-top 2s ease-in-out 0.2s;
+                                    </p>
+                                </div>
+                                <ul><h4>Transition-Elements</h4>
+                                    <li><b>Property Name:</b>
+                                        <p>Specifies which CSS property should animate.</p>
+                                        <p><b>Example:</b> <br>
+                                            <ul>
+                                                <li>
+                                                    transition: <u>background-color</u> 0.3s;<br>
+                                                    <b>background-color:</b> Only the background color changes smoothly.<br>
+                                                </li>
+                                                <li>
+                                                    transition: <u>opacity</u> 1s;<br>
+                                                    <b>Opacity:</b> Only the opacity changes.<br>
+                                                </li>
+                                                <li>
+                                                    transition: <u>all</u> 0.4s;<br>
+                                                    <b>all:</b> Every animatable property transitions.<br>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </li>
+                                    <li><b>Duration:</b>
+                                        <p>Specifies how long the transition takes.</p>
+                                        <p><b>Example:</b> <br>
+                                            &nbsp;&nbsp;&nbsp; transition: all <u>0.5s</u>;<br>
+                                            &nbsp;&nbsp;&nbsp; transition: background-color <u>0.3s</u>;<br>
+                                            <b style="color:red;">Note:</b> Without a duration, the transition wouldn't be visible.
+                                        </p>
+                                    </li>
+                                    <li><b>timing-function:</b> 
+                                        <p>Controls the speed curve of the animation.</p>
+                                        <p><b>Common Values:</b> <br>
+                                            <ul>
+                                                <li><b>ease</b> (default)- Starts slow, speeds up, ends slow.</li>
+                                                <li><b>linear</b> - Contatant Speed</li>
+                                                <li><b>ease-in</b> - Starts Slow</li>
+                                                <li><b>ease-out</b> - Ends Slow</li>
+                                                <li><b>ease-in-out</b> - Starts and Ends Slow</li>
+                                            </ul>
+                                        </p>
+                                        <p><b>Example:</b> <br>
+                                            &nbsp;&nbsp;&nbsp; transition: opacity 0.5s <u>ease-in-out</u>;
+                                        </p>
+                                    </li>
+                                    <li><b>delay:</b>
+                                        <p>Specifies how long to wait before the transition starts.</p>
+                                        <p><b>Example:</b> <br>
+                                            &nbsp;&nbsp;&nbsp; transition: background-color 0.5s ease <u>2s</u>;<br>
+                                            <b style="color:blue;"><u>It means:</u></b> It waits 2s, then animate for 0.5s.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><h2>CSS Transform</h2>
+                            <div>
+                                <p>This property lets us to rotate, scale, skew, or translate on element.</p>
+                                <ul>
+                                    <li><h3>Rotate():</h3>
+                                        <p>transform: rotate (45 deg);<br>
+                                           Metrics can also be radian, and turns too.<br>
+                                           It rotates clockwise using degrees, negative degree rotate counter clockwise.
+                                        </p>
+                                    </li>
+                                    <li><h3>Scale():</h3>
+                                        <p>Resize an element (simply changes the size). <br>
+                                            transform: scale (1.2);<br>
+                                            It is original size, then 1.2 -> 20% larger.<br>
+                                            transform: scaleX(1.5); - width only.<br>
+                                            transform: scaleY(2); - height only.<br>
+                                        </p>
+                                        <h4>Common Hover Effect:</h4>
+                                        <p><b>In CSS</b></p>
+                                        <p>.box : hover { <br>
+                                            &nbsp;&nbsp;&nbsp;transform: scale (1.05);<br>
+                                            } <br> 
+                                            It will enlarge 5%<br>
+                                        </p>
+                                        <p><b>translate():</b> <br>
+                                            Move an element from its original position.<br>
+                                            transform: translate (50px , 20px); where 50px moves towards right, and 20px moves towards down.
+                                        </p>
+                                        <p><b>Individual directions:</b><br>
+                                            transform: translateX (100px); for right <br>
+                                            transform: translateY (50px); for left
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><h2>Box Shadow</h2>
+                            <p>It adds shadow effect around an element's frame.<br>
+                                box-shadow: 2px 2px 10px green; where 1st 2px is to move towards right, then 2nd one towards bottom, 10px for blurring, and color of shadow.
+                            </p>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <h2> Contact Me </h2>
+            <ul>
+                <li><a href = "../Basic Stuff/Basic_Portfolio.html">About Me</a><br></li>
+                <li><b>Email</b>: jhaaaisha78@gmail.com</li>
+                <li><b>Whatsapp</b>: 9819985307</li>
+                <li><a href="https://github.com/AaishaCodeWithAI/">Github</a></li> 
+                <li><a href="https://www.facebook.com/aaisha.jha.612471">Facebook</a></li>
+                <li><a href="https://www.instagram.com/aaishajha17/">Instagram</a></li>
+            </ul>
+            <h4> Made with <span style = "color: red"> &hearts;</span> by Aaisha Jha</h4>
+        </footer>
+    </body>
+</html>
